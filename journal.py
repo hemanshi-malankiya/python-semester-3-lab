@@ -1,0 +1,679 @@
+#1. Write a program to input 2 nos and print their difference
+s1=int(input("Enter a no 1:"))
+s2=int(input("Enter a no 2:"))
+s3=s1-s2
+print("The diffference is:",s3)
+
+#2. Write a program to input a no and print whether its an even no or odd no.
+n1=int(input("Enter a no:"))
+if n1%2==0:
+    print("given number is even:")
+else:
+    print("the given number is odd.")
+
+#3. Write a program to input 3 nos and print the large of the 3 numbers
+n1=int(input("Enter a no 1:"))
+n2=int(input("Enter a no 2:"))
+n3=int(input("Enter a no 3:"))
+if n1>=n2 and n1>=n3:
+    print("the largest num is :",n1)
+elif n2>=n3 and n2>=n1:
+    print("The largest number is:",n2)
+else:
+    print("The largest number is:",n3)
+
+#4. Write a program to input a string and print it n times.
+s1=input("Enter a string:")
+n=int(input("Enter how many times to print (n): "))
+
+times=s1*n
+print(f"{times}",end=" ")
+
+#5. Write a program to input 2 strings and print whether they are equal
+
+s1=input("Enter a string 1:")
+s2=input("Enter a string 2:")
+if s1==s2:
+    print("The string are same")
+else:
+    print("THe string are not same")
+    
+
+#6. Write a program to input a month no and print it as a string
+ 
+month_no = int(input("Enter month number (1-12): "))
+
+
+months_dict = {
+    1: "January", 2: "February", 3: "March", 4: "April",
+    5: "May", 6: "June", 7: "July", 8: "August",
+    9: "September", 10: "October", 11: "November", 12: "December"
+}
+
+for key, value in months_dict.items():
+    if key == month_no:
+        print(f"The month is: {value}")
+
+#7. Write a program to input the name and 5 subject marks out of 100
+ #for a student Calculate the mark average. Print the grade    
+#( >=85 A, >=70  and < 85 B, >=55 and < 70 C, >=35 and < 55 D, < 35 Fail)
+marks=(input("ENter a student name:"))
+total=0
+for i  in range(1,6):
+    s=int(input(f"Enter marks for subject {i}: "))
+    print(f"Subject {i} marks: {s}")
+    total+=s
+print(f"{marks}: {total}")
+
+avg=total/5
+print(avg)
+
+if avg>=85:
+    print("A")
+elif avg>=70 and avg<85:
+    print("B")
+elif avg>=55 and avg<70:
+    print("C")
+elif avg>=35 and avg<55:
+    print("D")
+elif avg<35:
+    print("fail")
+else:
+    print("Inavalid")
+    
+#8. Print all the nos from 1-10 using a for loop
+for i in range(1,11)
+print(i)
+
+ #9. Input 20 nos and print the no of a unit no,
+#tens no, 100s no, or a 1000s no 10.   
+for i in range(1,21):
+    no=int(input("Enter a no:"))
+    if no in range(1,10):
+        print("unit")
+    elif no in range(10,100):
+        print("ten")
+    elif no in range(100,1000):
+        print("100s")
+    elif no in range(1000,10000):
+        print("1000s number")
+
+         
+#11. Print the fibonacci series for numbers lesser than 100
+ a=0
+ b=1
+for i in range(1,101):
+    i=a+b
+    if i >= 100:
+        break
+    
+    print(i)
+    a=b
+    b=i
+    
+#12. Write a program to print all the Armstrong nos between 11 – 999.
+    for num in range(11, 1000):
+
+    temp = num
+    sum = 0
+
+    while temp > 0:
+        digit = temp % 10
+        sum = sum + (digit * digit * digit)
+        temp = temp // 10
+
+    if sum == num:
+        print(num)
+#13. Write a script to input a no and print whether it’s a palindrome or not
+ num = int(input("Enter a number: "))
+
+temp = num
+rev = 0
+
+while temp > 0:
+
+    digit = temp % 10
+
+    rev = rev * 10 + digit
+
+    temp = temp // 10
+
+if num == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")       
+        
+
+
+    
+#14. Write a script to input strings from the user till the user enters 'end'.
+#Print the length of all the strings entered and print the no of strings whose
+#length is greater than 5 and the no of strings whose length is
+#lesser than 5
+greater=0
+smaller=0
+
+while True:
+  s=(input("Enter a string:"))
+
+  if s=="end":
+    break
+
+  length=len(s)
+  print("length",length)
+
+  if length > 5:
+        greater += 1
+  elif length < 5:
+        smaller += 1
+
+print("\nNumber of strings with length greater than 5:", greater)
+print("Number of strings with length less than 5:", smaller)
+
+#15. Write a script to input strings and print whether its a
+#palindrome or not ( do not use built in functions use
+#the while loop and + operator )
+
+s=input("Emter a string:")
+rev=""
+length=len(s)
+
+i=len(s)-1
+while i>=0:
+    rev=rev+s[i]
+    i=i-1
+
+if s==rev:
+   print("String is palindrome.")
+else:
+    print("not palindrome.")
+    
+#16. Input a number and print its binary value
+'''num = int(input("Enter a number: "))
+
+binary = ""
+
+while num > 0:
+    rem = num % 2
+    binary = str(rem) + binary
+    num = num // 2
+
+print("Binary =", binary)'''
+
+#17.
+#18. Print all the numbers from 1 to 10 using a while loop.
+i = 1
+
+while i <= 10:
+    print(i)
+    i = i + 1
+
+#19. Print all the even numbers using a for loop.
+for i in range(1, 11):
+    if i % 2 == 0:
+    print(i)
+
+#20. Print all the odd numbers from 1 to 100 using a for loop
+
+for i in range(1, 101):
+
+    if i % 2 != 0:
+        print(i)
+
+#21. Print the sum of all odd numbers and even numbers from 1 to 100
+even = 0
+odd = 0
+
+for i in range(1, 101):
+
+    if i % 2 == 0:
+        even = even + i
+    else:
+        odd = odd + i
+
+print("Sum of even numbers =", even)
+print("Sum of odd numbers =", odd)
+
+#22.Input a string and print it character by character
+s = input("Enter a string: ")
+
+for i in s:
+    print(i)
+
+#23.Input a string and print the number of vowels and consonants
+s = input("Enter a string: ")
+
+vowel = 0
+consonant = 0
+
+for i in s:
+
+    if i in "AEIOUaeiou":
+        vowel = vowel + 1
+    else:
+        consonant = consonant + 1
+
+print("Number of vowels =", vowel)
+print("Number of consonants =", consonant)
+
+ 
+'''#24. Write a python program to input two DNA string of same length and print a dot plot. 
+  A T G C 
+A 1 0 0 0 
+T 0 1 0 0 
+T 0 1 0 0 
+C 0 0 0 1'''
+
+s1=list(input("Enter a string 1:")
+s2=list(input("Enter a string 2:")
+print(s1)
+print(s2)
+
+if len(s1)==len(s2):
+    print(" "," ".join(s2))
+
+for i in s1:
+    print(i, end=" ")
+    for j in s2:
+        if i==j:
+            print("1",end=" ")
+        else:
+            print("0",end=" ")
+    print()       
+
+
+#25. Write a Python script that determines SNPs from a multiple
+#sequence alignment
+#and outputs each SNP and its position. For example if the input is
+
+>s0
+ACCCTGTATAAC
+>s1
+ACCGTGTACAAC
+>s2
+ACCCTGTAAAAC
+
+then the output should be
+
+"C/G" 	3
+"A/C/T" 8
+    
+
+ s0 = input("Enter sequence 1: ")
+s1 = input("Enter sequence 2: ")
+s2 = input("Enter sequence 3: ")
+
+if len(s0) == len(s1) == len(s2):
+
+    for i in range(len(s0)):
+        bases = []
+
+        if s0[i] not in bases:
+            bases.append(s0[i])
+
+        if s1[i] not in bases:
+            bases.append(s1[i])
+
+        if s2[i] not in bases:
+            bases.append(s2[i])
+
+        if len(bases) > 1:
+            print("/".join(bases), i)
+
+else:
+     print("Sequences must have the same length.")
+'''    
+26. Write a Python program to count the number of strings where the string
+  length is 2 or more and the first and last character are same from a given list of strings. 
+Sample List : ['abc', 'xyz', 'aba', '1221']
+Expected Result : 2'''
+
+    print("All sequences must be of same length.")
+List = ['abc', 'xyz', 'aba', '1221']
+
+count = 0
+
+for i in List:
+    if len(i) >= 2:
+        if i[0] == i[-1]:
+            count = count + 1
+
+print(count)
+
+'''27. Write a Python program to get a list, sorted in increasing
+order by the last element in each tuple from a given list of non-empty tuples. 
+Sample List : [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+Expected Result : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]'''
+
+List = [(2,5), (1,2), (4,4), (2,3), (2,1)]
+print(List)
+for i in range(len(List)):
+    for j in range(i+1, len(List)):
+        if List[i][1] > List[j][1]:
+            temp = List[i]
+            List[i] = List[j]
+            List[j] = temp
+
+print("Result:",List)
+
+#28.  Write a Python program to find
+#the list of words that are longer than n from a given list of words.
+
+l=input("Enter a word:").split()
+print(l)
+
+for i in l:
+    print(i,len(i))
+
+s=int(input("enter a n number:"))
+
+for i in l:
+      if len(i)>=s:
+       print(i)
+
+#29. Write a Python function that takes two lists
+#and returns True if they have at least one common member
+
+# 29. Write a Python function that takes two lists
+# and returns True if they have at least one common member.
+
+def common_member(list1, list2):
+    for i in list1:
+        for j in list2:
+            if i == j:
+                return True
+    return False
+
+list1 = input("Enter the elements of first list: ").split()
+list2 = input("Enter the elements of second list: ").split()
+
+result = common_member(list1, list2)
+print(result)
+
+#31. Write a Python program to generate all permutations of a list in Python. 
+List = [10, 15, 20, 25, 30, 35, 40]
+
+result = [i for i in List if i % 2 != 0]
+print(result)
+
+#32. Write a Python program to get the difference between the two lists. 
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7]
+
+result = []
+
+for i in list1:
+    if i not in list2:
+        result.append(i)
+print(result)
+
+#33. Write a Python program access the index of a list
+List = ["apple", "banana", "mango", "orange"]
+for i in range(len(List)):
+    print("Index =", i, "Value =", List[i])
+    
+#34. Write a Python program to convert a list of characters into a string. 
+List = ['P', 'Y', 'T', 'H', 'O', 'N']
+
+s = "".join(List)
+print(s)
+
+List = ['P', 'Y', 'T', 'H', 'O', 'N']
+
+s = ""
+
+for i in List:
+    s = s + i
+
+print(s)
+
+#35. Write a Python program to find the index of an item in a specified list. 
+List = ["apple", "banana", "mango", "orange"]
+print(List)
+
+item=input("Enter a item to find:")
+for i in range(len(List)):
+    if List[i]==item:
+        print("Index",i)
+
+#36. Write a Python program to append a list to the second list. 
+
+l1=[1,2,3]
+l2=[4,5,6,7]
+l2.append(l1)
+print(l2)
+
+#37.#37. Write a Python program to select an item randomly from a list.
+List = ["apple", "banana", "mango", "orange"]
+print(List)
+index = int(input("Enter index: "))
+
+print("Selected item:", List[index])
+
+import random
+
+List = input("Enter list items separated by spaces: ").split()
+
+item = random.choice(List)
+
+print("Random item:", item)
+
+#38. Write a Python program to find the second smallest and largest
+ #number in a list
+List = [10, 25, 8, 45, 15, 30]
+print(List)
+
+List.sort()
+print(List)
+
+
+print("Second Smallest =", List[1])
+print("Second Largest =", List[-2])
+
+
+#39. Write a Python program to get the frequency of the elements in a list.
+List = [1, 2, 3, 2, 4, 1, 2, 5, 3, 1]
+print(List)
+
+for i in List:
+    print(i, ":", List.count(i))
+
+#40. Write a Python program to count the number of elements in a
+    #list within a specified range.
+
+List = [10, 25, 8, 45, 15, 30, 18, 22]
+
+lower = int(input("Enter lower limit: "))
+upper = int(input("Enter upper limit: "))
+
+count = 0
+
+for i in List:
+    if i >= lower and i <= upper:
+        count = count + 1
+print("Count =", count)
+
+'''47. Write a Python program to convert list to list of dictionaries. 
+Sample lists: ["Black", "Red", "Maroon", "Yellow"],
+ ["#000000", "#FF0000", "#800000", "#FFFF00"]'''
+
+color=["Black", "Red", "Maroon", "Yellow"]
+code=["#000000", "#FF0000", "#800000", "#FFFF00"]
+r=[]
+
+for i in range(len(color)):
+    d={
+       "color":color[i],
+       "code":code[i]
+        }
+    r.append(d)
+
+print(r)    
+
+
+##48. Write a Python program to split a list every Nth element. 
+##Sample list: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
+##List size : 5
+##Expected Output: [['a', 'd', 'g', 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]
+l= ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+                'i', 'j', 'k', 'l', 'm', 'n']
+n=5
+r=[]
+for i in range(n):
+    new=l[i::n]
+    r.append(new)
+print(r)    
+
+'''49. Write a Python program to compute the difference between two lists. 
+Sample data: ["red", "orange", "green", "blue", "white"],
+["black", "yellow", "green", "blue"]
+Expected Output:
+Color1-Color2: ['white', 'orange', 'red']
+Color2-Color1: ['black', 'yellow']'''
+color1 = ["red", "orange", "green", "blue", "white"]
+color2 = ["black", "yellow", "green", "blue"]
+set1 = set(color1)
+set2 = set(color2)
+diff1 = list(set1 - set2)
+
+
+diff2 = list(set2 - set1)
+
+
+print("Color1-Color2:", diff1)
+print("Color2-Color1:", diff2)
+
+
+'''50. Write a Python program to replace the last element in
+a list with another list. 
+Sample data : [1, 3, 5, 7, 9, 10], [2, 4, 6, 8]
+Expected Output: [1, 3, 5, 7, 9, 2, 4, 6, 8]'''
+
+list1 = [1, 3, 5, 7, 9, 10]
+list2 = [2, 4, 6, 8]
+result = list1[:-1] + list2
+
+print(result)
+
+
+'''51. Write a Python program to insert a given string at the
+beginning of all items in a list. 
+Sample list : [1,2,3,4], string : emp
+Expected output : ['emp1', 'emp2', 'emp3', 'emp4']'''
+
+list=[1,2,3,4]
+l="emp"
+r=[]
+for i in list:
+    new=l+str(i)
+    r.append(new)
+
+
+print(r)
+    
+
+
+'''52. Write a Python program to move all zero digits to end of a given
+list of numbers. 
+Expected output:
+Original list:
+[3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9,
+10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
+Move all zero digits to end of the said list of numbers:
+[3, 4, 6, 2, 6, 7, 6, 9, 10, 7, 4, 4, 5, 3, 2, 9,
+7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+'''
+
+list=[3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0,
+      9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
+result=[]
+print(list)
+for i in list:
+    if i!=0:
+        result.append(i)
+        
+zero_count=list.count(0)
+result.extend([0]*zero_count)
+print(result)
+
+'''53. Write a Python program to find the list in a list
+of lists whose sum of elements is the highest. 
+Sample lists: [[1,2,3], [4,5,6], [10,11,12], [7,8,9]]
+Expected Output: [10, 11, 12]'''
+
+l=[[1,2,3], [4,5,6], [10,11,12], [7,8,9]]
+highest=l[0]
+max_sum=sum(highest)
+
+for i in l:
+    curr_sum=sum(i)
+
+    if curr_sum >max_sum:
+        max_sum=curr_sum
+        highest=i
+print(highest)
+
+'''54. Write a Python program to find all the values in a
+list are greater than a input number.'''
+my_list = [5, 12, 18, 22, 30, 45]
+
+n = int(input("Enter a number: "))
+
+r = []
+
+
+for i in my_list:
+    if i > n:
+       r.append(i)
+
+print("Values greater than the input number:")
+print(r)
+
+55. Write a Python program to find the items starts with
+    specific character from a given list. 
+Expected Output:
+Original list: 
+['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
+[‘a’,’d’,’w’]
+Items start with a from the said list:
+['abcd', 'abc', 'acjd']
+Items start with d from the said list:
+['dagfa']
+Items start with w from the said list:
+[]
+
+l= ['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
+r=[]
+for i in range(len(l))
+    if l[i]==a:
+        print(r.append[i])
+    elif l[i]==d:
+        print(r.append[i])
+    elif l[i]==w:
+        print(r.append[i])
+print(f"Items start with {i} from the said list:")        
+print(r)   
+        
+
+   
+
+        
+        
+
+        
+ 
+
+        
+
+        
+
+        
+
+
+
+
+    
+    
+    
+           
+
