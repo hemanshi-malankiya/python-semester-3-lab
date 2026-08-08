@@ -629,7 +629,7 @@ for i in my_list:
 print("Values greater than the input number:")
 print(r)
 
-55. Write a Python program to find the items starts with
+#55. Write a Python program to find the items starts with
     specific character from a given list. 
 Expected Output:
 Original list: 
@@ -652,7 +652,51 @@ for i in range(len(l))
     elif l[i]==w:
         print(r.append[i])
 print(f"Items start with {i} from the said list:")        
-print(r)   
+print(r)
+
+##56. Write a Python program to flatten a given nested list structure. 
+##Original list: [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+##Flatten list:
+##[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120]
+l =[0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+print("Original list:",l)
+flatten_list=[]
+for i in l:
+    if type(i)==list:
+        for j in i:
+            flatten_list.append(j)
+    else:
+        flatten_list.append(i)
+print("flatten_list:",flatten_list)
+
+##57. Write a Python program to remove consecutive duplicates of a given list. 
+##Original list:
+##[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+##After removing consecutive duplicates:
+##[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 4]
+##
+
+list=[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+print("List",list)
+l=[list[0]]
+for i in range(1,len(list)):
+    if list[i]!=list[i-1]:
+        l.append(list[i])
+        
+print(l)
+
+
+
+
+
+
+
+
+
+
+            
+
+
         
 
    
