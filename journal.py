@@ -684,6 +684,103 @@ for i in range(1,len(list)):
         l.append(list[i])
         
 print(l)
+##59. Write a Python program to remove the K'th element from a given list, print the new list. 
+##Original list:
+##K=2
+##[1, 1, 2, 3, 4, 4, 5, 1]
+##After removing an element at the kth position of the said list:
+##[1, 1, 3, 4, 4, 5, 1]
+l=[1, 1, 2, 3, 4, 4, 5, 1]
+print(l)
+k=2
+d=[]
+for i in range(len(l)):
+    if i != k - 1:
+        d.append(l[i])
+print(d)
+
+##60. Write a Python program to insert an element at a specified position into a given list. 
+##Original list:
+##[1, 1, 2, 3, 4, 4, 5, 1]
+##Value : 12
+##Positon : 3
+##After inserting an element at kth position in the said list:
+##[1, 1, 12, 2, 3, 4, 4, 5, 1]
+
+l=[1, 1, 2, 3, 4, 4, 5, 1]
+print(l)
+
+n=int(input("Enter a value to insert:"))
+p=int(input("Enter a position:"))     
+for i in range(len(l)) :
+    if i==p-1:
+      l.insert(p-1,n)
+print(l)      
+      
+##61. Write a Python program to read a matrix from console and print the sum for each column. Accept matrix rows, columns and elements for each column separated with a space(for every row) as input from the user. 
+##Input rows: 2
+##Input columns: 2
+##Input number of elements in a row (1, 2, 3,4):
+##1 2
+##3 4
+##sum for each column:
+##4 6
+##sum for each row
+##3 7
+rows = int(input("Enter rows: "))
+columns = int(input("Enter columns: "))
+
+matrix = []
+
+# Input matrix
+for i in range(rows):
+    row = []
+
+    for j in range(columns):
+        value = int(input("Enter element: "))
+        row.append(value)
+
+    matrix.append(row)
+
+# Print matrix
+print("Matrix:")
+
+for i in range(rows):
+    for j in range(columns):
+        print(matrix[i][j], end=" ")
+    print()
+
+# Sum of each column
+print("Sum for each column:")
+
+for j in range(columns):
+    total = 0
+
+    for i in range(rows):
+        total = total + matrix[i][j]
+
+    print(total, end=" ")
+
+print()
+
+# Sum of each row
+print("Sum for each row:")
+
+for i in range(rows):
+    total = 0
+
+    for j in range(columns):
+        total = total + matrix[i][j]
+
+    print(total, end=" ")
+
+       
+    
+
+    
+
+    
+
 
 
 
