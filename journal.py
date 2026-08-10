@@ -774,6 +774,39 @@ for i in range(rows):
 
     print(total, end=" ")
 
+##62. Write a Python program to find the list with maximum and minimum length. 
+##Original list:
+##[[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+##List with maximum length of lists:
+##(3, [13, 15, 17])
+##List with minimum length of lists:
+##(1, [0])
+##Original list:
+##[[0], [1, 3], [5, 7], [9, 11], [3, 5, 7]]
+##List with maximum length of lists:
+##(3, [3, 5, 7])
+##List with minimum length of lists:
+##(1, [0])
+    
+
+
+l = [[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+
+print("Original list:", l)
+
+max_list = l[0]
+min_list = l[0]
+
+for i in l:
+    if len(i) > len(max_list):
+        max_list = i
+
+    if len(i) < len(min_list):
+        min_list = i
+
+print("List with maximum length of lists:", (len(max_list), max_list))
+print("List with minimum length of lists:", (len(min_list), min_list))    
+
        
     
 
