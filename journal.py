@@ -807,7 +807,8 @@ for i in l:
 print("List with maximum length of lists:", (len(max_list), max_list))
 print("List with minimum length of lists:", (len(min_list), min_list))
 
-##63. Write a Python program to count the number of sublists contain a particular element. 
+##63. Write a Python program to count the number of sublists
+##contain a particular element. 
 ##Original list:
 ##[[1, 3], [5, 7], [1, 11], [1, 15, 7]]
 ##Count 1 in the said list:
@@ -832,6 +833,30 @@ for i in l:
         count = count + 1
 
 print("Count:", count)
+
+##65. Write a Python program to extract common index
+##elements from more than one given list. 
+##Do it without using sets
+##Original lists:
+##[1, 1, 3, 4, 5, 6, 7]
+##[0, 1, 2, 3, 4, 5, 7]
+##[0, 1, 2, 3, 4, 5, 7]
+##Common index elements of the said lists:
+##[1, 7]
+l1 = [1, 1, 3, 4, 5, 6, 7]
+l2 = [0, 1, 2, 3, 4, 5, 7]
+l3 = [0, 1, 2, 3, 4, 5, 7]
+print(l1)
+print(l2)
+print(l3)
+
+result = []
+
+for i in range(len(l1)):
+    if l1[i] == l2[i] and l2[i] == l3[i]:
+        result.append(l1[i])
+
+print("Common index elements:", result)
        
     
 
