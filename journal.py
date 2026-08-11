@@ -805,8 +805,33 @@ for i in l:
         min_list = i
 
 print("List with maximum length of lists:", (len(max_list), max_list))
-print("List with minimum length of lists:", (len(min_list), min_list))    
+print("List with minimum length of lists:", (len(min_list), min_list))
 
+##63. Write a Python program to count the number of sublists contain a particular element. 
+##Original list:
+##[[1, 3], [5, 7], [1, 11], [1, 15, 7]]
+##Count 1 in the said list:
+##3
+##Count 7 in the said list:
+##2
+##Original list:
+##[['A', 'B'], ['A', 'C'], ['A', 'D', 'E'], ['B', 'C', 'D']]
+##Count 'A' in the said list:
+##3
+##Count 'E' in the said list:
+##1
+
+l = [[1, 3], [5, 7], [1, 11], [1, 15, 7]]
+
+n = int(input("Enter element: "))
+
+count = 0
+
+for i in l:
+    if n in i:
+        count = count + 1
+
+print("Count:", count)
        
     
 
