@@ -922,6 +922,8 @@ l = [2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
 ##Item with maximum occurrences of the said list:
 ##2
 
+l = [2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
+
 max_count = 0
 max_item = 0
 
@@ -942,12 +944,33 @@ print("Item with maximum occurrences:", max_item)
 ##Items with specified index of the said list:
 ##[2, 4, 9, 2, 1]
 l = [2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
+print(l)
 
 index = [0, 3, 5, 7, 10]
 
 result = [l[i] for i in index]
 
 print("Items with specified index:", result)
+
+##70. Write a Python program to check whether a specified list is sorted or not. 
+##Original list:
+##[1, 2, 4, 6, 8, 10, 12, 14, 16, 17]
+##Is the said list is sorted!
+##True
+##Original list:
+##[1, 2, 4, 6, 8, 10, 12, 16, 14, 17]
+##Is the said list is sorted!
+##False
+l = [1, 2, 4, 6, 8, 10, 12, 14, 16, 17]
+
+if l == sorted(l):
+    print(True)
+else:
+    print(False)
+
+
+
+
 
 
 
