@@ -881,6 +881,39 @@ print("After extracting:", L)
       
 
 
+##67. Write a Python program to rotate a given list by specified number of items to the right or left direction. 
+##original List:
+##[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+##Rotate the said list in left direction by 4:
+##[4, 5, 6, 7, 8, 9, 10, 1, 2, 3]
+##Rotate the said list in left direction by 2:
+##[3, 4, 5, 6, 7, 8, 9, 10, 1, 2]
+##Rotate the said list in Right direction by 4:
+##[8, 9, 10, 1, 2, 3, 4, 5, 6]
+##Rotate the said list in Right direction by 2:
+##[9, 10, 1, 2, 3, 4, 5, 6, 7, 8]
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+print("Original list:", l)
+
+l = l[4:] + l[:4]
+print("Left rotation by 4:", l)
+
+# Left rotation by 2
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+l = l[2:] + l[:2]
+print("Left rotation by 2:", l)
+
+# Right rotation by 4
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+l = l[-4:] + l[:-4]
+print("Right rotation by 4:", l)
+
+# Right rotation by 2
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+l = l[-2:] + l[:-2]
+print("Right rotation by 2:", l)
 
        
     
