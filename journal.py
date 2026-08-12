@@ -857,6 +857,31 @@ for i in range(len(l1)):
         result.append(l1[i])
 
 print("Common index elements:", result)
+
+##66. Write a Python program to extract specified size of strings from a give list of string values. 
+##Original list:
+##['Python', 'list', 'exercises', 'practice', 'solution']
+##length of the string to extract:
+##8
+##After extracting strings of specified length from the said list:
+##['practice', 'solution']
+
+
+l=['Python', 'list', 'exercises', 'practice', 'solution']
+print(l)
+L=[]
+
+x=int(input("Enter  a length of the string to exract:"))
+for i in range(len(l)):
+    if len(l[i]) == x:
+     L.append(l[i])
+
+print(L)
+print("After extracting:", L)
+      
+
+
+
        
     
 
