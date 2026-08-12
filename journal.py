@@ -962,7 +962,8 @@ print("Items with specified index:", result)
 ##Is the said list is sorted!
 ##False
 l = [1, 2, 4, 6, 8, 10, 12, 14, 16, 17]
-
+print(l)
+print("Is the said list is sorted!")
 if l == sorted(l):
     print(True)
 else:
