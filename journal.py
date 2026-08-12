@@ -914,7 +914,25 @@ l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 l = l[-2:] + l[:-2]
 print("Right rotation by 2:", l)
+l = [2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
 
+##68. Write a Python program to find the item with maximum occurrences in a given list. 
+##Original list:
+##[2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
+##Item with maximum occurrences of the said list:
+##2
+
+max_count = 0
+max_item = 0
+
+for i in l:
+    count = l.count(i)
+
+    if count > max_count:
+        max_count = count
+        max_item = i
+
+print("Item with maximum occurrences:", max_item)
        
     
 
