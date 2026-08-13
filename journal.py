@@ -994,6 +994,39 @@ n = 2
 result = [t[n] for t in data]
 print(result)
 
+##72. Write a Python program to check if the elements of a given list are unique or not. 
+##Original list:
+##[1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]
+##Is the said list contains all unique elements!
+##False
+##Original list:
+##[2, 4, 6, 8, 10, 12, 14]
+##Is the said list contains all unique elements!
+##True
+list1 = [1, 2, 4, 6, 8, 2, 1, 4, 10, 12, 14, 12, 16, 17]
+list2 = [2, 4, 6, 8, 10, 12, 14]
+
+print("Original list:")
+print(list1)
+
+if len(list1) == len(set(list1)):
+    print("Is the said list contains all unique elements!")
+    print(True)
+else:
+    print("Is the said list contains all unique elements!")
+    print(False)
+
+
+print("\nOriginal list:")
+print(list2)
+
+if len(list2) == len(set(list2)):
+    print("Is the said list contains all unique elements!")
+    print(True)
+else:
+    print("Is the said list contains all unique elements!")
+    print(False)
+
 
 
 
