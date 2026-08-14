@@ -1053,7 +1053,32 @@ print("\nSort by index 0:")
 print(sorted(data, key=lambda x: x[0]))
 
 print("\nSort by index 2:")
-print(sorted(data, key=lambda x: x[2]))    
+print(sorted(data, key=lambda x: x[2]))
+
+##74. Write a Python program to remove all elements
+##from a given list present in another list. 
+##Original lists:
+##list1: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+##list2: [2, 4, 6, 8]
+##Remove all elements from 'list1' present in 'list2:
+##[1, 3, 5, 7, 9, 10]
+
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+list2 = [2, 4, 6, 8]
+
+print("Original list1:")
+print(list1)
+
+print("Original list2:")
+print(list2)
+
+for x in list2:
+    if x in list1:
+        list1.remove(x)
+
+print("After removing elements:")
+print(list1)
 
     
 
