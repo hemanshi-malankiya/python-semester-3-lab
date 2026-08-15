@@ -1080,6 +1080,29 @@ for x in list2:
 print("After removing elements:")
 print(list1)
 
+##75. Write a Python program to create a list taking
+##alternate elements from a given list. 
+##Original list: use list comprehension
+##['red', 'black', 'white', 'green', 'orange']
+##List with alternate elements from the said list:
+##['red', 'white', 'orange']
+##Original list:
+##[2, 0, 3, 4, 0, 2, 8, 3, 4, 2]
+##List with alternate elements from the said list:
+##[2, 3, 0, 8, 4]
+# Original lists
+list1 = ['red', 'black', 'white', 'green', 'orange']
+list2 = [2, 0, 3, 4, 0, 2, 8, 3, 4, 2]
+
+# Taking alternate elements using list comprehension
+result1 = [list1[i] for i in range(0, len(list1), 2)]
+result2 = [list2[i] for i in range(0, len(list2), 2)]
+
+print("Original list:", list1)
+print("List with alternate elements:", result1)
+
+print("Original list:", list2)
+print("List with alternate elements:", result2)
     
 
 
