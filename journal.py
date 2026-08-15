@@ -1103,6 +1103,40 @@ print("List with alternate elements:", result1)
 
 print("Original list:", list2)
 print("List with alternate elements:", result2)
+
+##76. Write a Python program to find the nested lists
+##elements which are present in another list. 
+##Original lists:
+##[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+##[[12, 18, 23, 25, 45], [7, 11, 19, 24, 28], [1, 5, 8, 18, 15, 16]]
+##Intersection of said nested lists:
+##[[12], [7, 11], [1, 5, 8]]
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+
+list2 = [
+    [12, 18, 23, 25, 45],
+    [7, 11, 19, 24, 28],
+    [1, 5, 8, 18, 15, 16]
+]
+
+result = []
+
+for sublist in list2:
+    temp = []
+    
+    for x in sublist:
+        if x in list1:
+            temp.append(x)
+    
+    result.append(temp)
+
+print("Original lists:")
+print(list1)
+print(list2)
+
+print("Intersection of said nested lists:")
+print(result)
     
 
 
