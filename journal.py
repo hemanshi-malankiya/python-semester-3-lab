@@ -1167,6 +1167,27 @@ for element in lists[0]:
 
 print("Common element(s) in nested lists:")
 print(common)
+
+##78. Write a Python program to reverse strings in a
+##given list of string values. 
+##Original lists:
+##['Red', 'Green', 'Blue', 'White', 'Black']
+##Reverse strings of the said given list:
+##['deR', 'neerG', 'eulB', 'etihW', 'kcalB']
+list1 = ['Red', 'Green', 'Blue', 'White', 'Black']
+
+print("Original list:")
+print(list1)
+
+result = []
+
+for word in list1:
+    reverse = word[::-1]
+    result.append(reverse)
+
+print("Reverse strings of the said given list:")
+print(result)
+
     
 
 
