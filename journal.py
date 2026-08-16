@@ -1188,6 +1188,30 @@ for word in list1:
 print("Reverse strings of the said given list:")
 print(result)
 
+##79. Write a Python program to find the maximum and minimum
+##product from the pairs of tuple within a given list. 
+##The original list, tuple :
+##[(2, 7), (2, 6), (1, 8), (4, 9)]
+##Maximum and minimum product from the pairs of the said tuple of list:
+##(36, 8)
+list1 = [(2, 7), (2, 6), (1, 8), (4, 9)]
+
+print("The original list, tuple:")
+print(list1)
+
+products = []
+
+for pair in list1:
+    product = pair[0] * pair[1]
+    products.append(product)
+
+maximum = max(products)
+minimum = min(products)
+
+print("Maximum and minimum product from the pairs of the said tuple of list:")
+print((maximum, minimum))
+
+
     
 
 
