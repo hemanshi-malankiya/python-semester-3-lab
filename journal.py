@@ -1137,6 +1137,36 @@ print(list2)
 
 print("Intersection of said nested lists:")
 print(result)
+
+##77. Write a Python program to find common element(s) in a given nested lists. 
+##Original lists:
+##[[12, 18, 23, 25, 45], [7, 12, 18, 24, 28], [1, 5, 8, 12, 15, 16, 18]]
+##Common element(s) in nested lists:
+##[18, 12]
+lists = [
+    [12, 18, 23, 25, 45],
+    [7, 12, 18, 24, 28],
+    [1, 5, 8, 12, 15, 16, 18]
+]
+
+print("Original lists:")
+print(lists)
+
+common = []
+
+for element in lists[0]:
+    found = True
+
+    for sublist in lists[1:]:
+        if element not in sublist:
+            found = False
+            break
+
+    if found:
+        common.append(element)
+
+print("Common element(s) in nested lists:")
+print(common)
     
 
 
