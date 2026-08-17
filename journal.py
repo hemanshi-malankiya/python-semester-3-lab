@@ -1349,6 +1349,36 @@ print(l)
 print("Reverse each list:")
 print(result)
 
+
+##84. Write a Python program to compute the sum of digits of
+##each number of a given list. 
+##Original tuple: 
+##[10, 2, 56]
+##Sum of digits of each number of the said list of integers:
+##14
+##Original tuple:
+##[10, 20, 4, 5, 'b', 70, 'a']
+##Sum of digits of each number of the said list of integers:
+##19
+##Original tuple:
+##[10, 20, -4, 5, -70]
+##Sum of digits of each number of the said list of integers:
+##19
+l = [10, 2, 56]
+
+total = 0
+
+for num in l:
+    for digit in str(num):
+        total = total + int(digit)
+
+print("Original list:")
+print(l)
+
+print("Sum of digits:")
+print(total)
+
+
     
 
 
