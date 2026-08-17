@@ -1272,6 +1272,35 @@ for i in range(len(list1)):
 print("Interleave multiple lists:")
 print(result)
 
+##81. Write a Python program to remove words from a given
+##list of strings containing a character or string. 
+##Original list:
+##list1: ['Red color', 'Orange#', 'Green', 'Orange @', 'White']
+##Character list:
+##['#', 'color', '@']
+##New list:
+##['Red', '', 'Green', 'Orange', 'White']
+list1 = ['Red color', 'Orange#', 'Green', 'Orange @', 'White']
+characters = ['#', 'color', '@']
+
+result = []
+
+for word in list1:
+    new_word = word
+
+    for char in characters:
+        new_word = new_word.replace(char, '')
+
+    result.append(new_word.strip())
+
+print("Original list:")
+print(list1)
+
+print("Character list:")
+print(characters)
+
+print("New list:")
+print(result)
 
 
 
