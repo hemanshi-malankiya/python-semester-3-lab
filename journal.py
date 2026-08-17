@@ -616,6 +616,7 @@ print(highest)
 '''54. Write a Python program to find all the values in a
 list are greater than a input number.'''
 my_list = [5, 12, 18, 22, 30, 45]
+print(my_list)
 
 n = int(input("Enter a number: "))
 
@@ -630,7 +631,7 @@ print("Values greater than the input number:")
 print(r)
 
 #55. Write a Python program to find the items starts with
-    specific character from a given list. 
+   # specific character from a given list. 
 Expected Output:
 Original list: 
 ['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
@@ -642,17 +643,22 @@ Items start with d from the said list:
 Items start with w from the said list:
 []
 
-l= ['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
-r=[]
-for i in range(len(l))
-    if l[i]==a:
-        print(r.append[i])
-    elif l[i]==d:
-        print(r.append[i])
-    elif l[i]==w:
-        print(r.append[i])
-print(f"Items start with {i} from the said list:")        
-print(r)
+l = ['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
+
+r = ['a', 'd', 'w']
+
+print("Original list:")
+print(l)
+
+for x in r:
+    result = []
+
+    for i in range(len(l)):
+        if l[i].startswith(x):
+            result.append(l[i])
+
+    print("Items start with", x, "from the said list:")
+    print(result)
 
 ##56. Write a Python program to flatten a given nested list structure. 
 ##Original list: [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
@@ -684,6 +690,33 @@ for i in range(1,len(list)):
         l.append(list[i])
         
 print(l)
+
+##58. Write a Python program to pack consecutive duplicates of a given list elements into sublists. 
+##Original list:
+##[0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+##After packing consecutive duplicates of the said list elements into sublists:
+##[[0, 0], [1], [2], [3], [4, 4], [5], [6, 6, 6], [7], [8], [9], [4, 4]]
+
+
+l = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+
+result = []
+temp = [l[0]]
+
+for i in range(1, len(l)):
+    if l[i] == l[i - 1]:
+        temp.append(l[i])
+    else:
+        result.append(temp)
+        temp = [l[i]]
+
+result.append(temp)
+
+print("Original list:")
+print(l)
+
+print("After packing consecutive duplicates of the said list elements into sublists:")
+print(result)
 ##59. Write a Python program to remove the K'th element from a given list, print the new list. 
 ##Original list:
 ##K=2
@@ -717,7 +750,8 @@ for i in range(len(l)) :
       l.insert(p-1,n)
 print(l)      
       
-##61. Write a Python program to read a matrix from console and print the sum for each column. Accept matrix rows, columns and elements for each column separated with a space(for every row) as input from the user. 
+##61. Write a Python program to read a matrix from console and print the sum for each column.
+## Accept matrix rows, columns and elements for each column separated with a space(for every row) as input from the user. 
 ##Input rows: 2
 ##Input columns: 2
 ##Input number of elements in a row (1, 2, 3,4):
