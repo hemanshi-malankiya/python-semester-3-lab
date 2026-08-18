@@ -1402,6 +1402,37 @@ print(words_to_remove)
 print("\nAfter removing the specified words from the said list:")
 print(result_list)
 
+##86. Write a Python program to add two given lists of different lengths,
+##start from left. 
+##Original lists:
+##[2, 4, 7, 0, 5, 8]
+##[3, 3, -1, 7]
+##Add said two lists from left:
+##[5, 7, 6, 7, 5, 8]
+##Original lists:
+##[1, 2, 3, 4, 5, 6]
+##[2, 4, -3]
+##Add said two lists from left:
+##[3, 6, 0, 4, 5, 6]
+l1 = [2, 4, 7, 0, 5, 8]
+l2 = [3, 3, -1, 7]
+
+result = []
+
+for i in range(len(l1)):
+    if i < len(l2):
+        result.append(l1[i] + l2[i])
+    else:
+        result.append(l1[i])
+
+print("Original lists:")
+print(l1)
+print(l2)
+
+print("Add said two lists from left:")
+print(result)
+
+
 
 
 
