@@ -1432,6 +1432,29 @@ print(l2)
 print("Add said two lists from left:")
 print(result)
 
+##87. Write a Python program to find the last occurrence of a specified
+##item in a given list. 
+##Original list:
+##['s', 'd', 'f', 's', 'd', 'f', 's', 'f', 'k', 'o', 'p', 'i', 'w', 'e', 'k', 'c']
+##Last occurrence of f in the said list:
+##7
+##Last occurrence of k in the said list:
+##14
+l = ['s', 'd', 'f', 's', 'd', 'f', 's', 'f',
+     'k', 'o', 'p', 'i', 'w', 'e', 'k', 'c']
+
+items = ['f', 'k']
+
+for item in items:
+    position = -1
+
+    for i in range(len(l)):
+        if l[i] == item:
+            position = i
+
+    print("Last occurrence of", item, "in the said list:")
+    print(position)
+
 
 
 
