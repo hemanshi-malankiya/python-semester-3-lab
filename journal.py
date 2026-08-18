@@ -1377,6 +1377,33 @@ print(l)
 
 print("Sum of digits:")
 print(total)
+##
+##85. Write a Python program to remove specific words from a given list. 
+##Original list:
+##['red', 'green', 'blue', 'white', 'black', 'orange']
+##Remove words:
+##['white', 'orange']
+##After removing the specified words from the said list:
+##['red', 'green', 'blue', 'black']
+# Original data
+original_list = ["red", "green", "blue", "white", "black", "orange"]
+words_to_remove = ["white", "orange"]
+
+# Remove words using list comprehension
+result_list = [word for word in original_list if word not in words_to_remove]
+
+# Print outputs
+print("Original list:")
+print(original_list)
+
+print("\nRemove words:")
+print(words_to_remove)
+
+print("\nAfter removing the specified words from the said list:")
+print(result_list)
+
+
+
 
 
     
