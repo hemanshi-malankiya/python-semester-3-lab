@@ -1496,6 +1496,24 @@ for size in sizes:
     print("Split into size", size, ":")
     print(result)
 
+####90. Write a Python program to convert a given list of strings into
+##    list of lists. Original list of strings:
+####['Red', 'Maroon', 'Yellow', 'Olive']
+####Convert the said list of strings into list of lists:
+####[['R', 'e', 'd'], ['M', 'a', 'r', 'o', 'o', 'n'], ['Y', 'e', 'l', 'l', 'o', 'w'], ['O', 'l', 'i', 'v', 'e']]
+####    
+l = ['Red', 'Maroon', 'Yellow', 'Olive']
+
+result = []
+
+for word in l:
+    result.append(list(word))
+
+print("Original list of strings:")
+print(l)
+
+print("Convert into list of lists:")
+print(result)
 
 
     
