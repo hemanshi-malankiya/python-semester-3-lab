@@ -1454,8 +1454,25 @@ for item in items:
 
     print("Last occurrence of", item, "in the said list:")
     print(position)
+##    
+##88. Write a Python program to get the index of the first element
+##which is greater than a specified element. 
+##Original list:
+##[12, 45, 23, 67, 78, 90, 100, 76, 38, 62, 73, 29, 83]
+##Index of the first element which is greater than 73 in the said list:
+##4
+##Index of the first element which is greater than 21 in the said list:
+##1
 
+l = [12, 45, 23, 67, 78, 90, 100, 76, 38, 62, 73, 29, 83]
 
+number = 73
+
+for i in range(len(l)):
+    if l[i] > number:
+        print("Index of the first element which is greater than", number, ":")
+        print(i)
+        break
 
 
 
