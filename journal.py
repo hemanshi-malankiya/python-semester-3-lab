@@ -1515,6 +1515,25 @@ print(l)
 print("Convert into list of lists:")
 print(result)
 
+##91. Write a Python program to convert a given list
+##of strings and characters to a single list of characters. 
+##Original list:
+##['red', 'white', 'a', 'b', 'black', 'f']
+##Convert the said list of strings and characters to a single list of characters:
+##['r', 'e', 'd', 'w', 'h', 'i', 't', 'e', 'a', 'b', 'b', 'l', 'a', 'c', 'k', 'f']
+l = ['red', 'white', 'a', 'b', 'black', 'f']
+
+result = []
+
+for word in l:
+    for char in word:
+        result.append(char)
+
+print("Original list:")
+print(l)
+
+print("Single list of characters:")
+print(result)
 
     
 
