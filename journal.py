@@ -1561,6 +1561,29 @@ print(l)
 print("Insert a after every 2nd element:")
 print(result)
 
+##93. Write a Python program to remove the last N number
+##of elements from a given list. 
+##Original lists:
+##[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34, 5, 3, 5]
+##Remove the last 3 elements from the said list:
+##[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34]
+##Remove the last 5 elements from the said list:
+##[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34]
+##Remove the last 1 element from the said list:
+##[2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34, 5, 3]
+##
+l = [2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34, 5, 3, 5]
+
+numbers = [3, 5, 1]
+
+print("Original list:")
+print(l)
+
+for n in numbers:
+    result = l[:-n]
+
+    print("Remove the last", n, "elements:")
+    print(result)
     
 
 
