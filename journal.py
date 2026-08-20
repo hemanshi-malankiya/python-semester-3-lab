@@ -1535,6 +1535,32 @@ print(l)
 print("Single list of characters:")
 print(result)
 
+##92. Write a Python program to insert an element in a given list after every nth position. 
+##Original list:
+##[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+##Insert a in the said list after 2 nd element:
+##[1, 2, 'a', 3, 4, 'a', 5, 6, 'a', 7, 8, 'a', 9, 0]
+##Insert b in the said list after 4 th element:
+##[1, 2, 3, 4, 'b', 5, 6, 7, 8, 'b', 9, 0]
+l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+n = 2
+element = 'a'
+
+result = []
+
+for i in range(len(l)):
+    result.append(l[i])
+
+    if (i + 1) % n == 0:
+        result.append(element)
+
+print("Original list:")
+print(l)
+
+print("Insert a after every 2nd element:")
+print(result)
+
     
 
 
