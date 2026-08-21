@@ -1616,6 +1616,36 @@ print(max_result)
 print("Minimum value for each tuple position:")
 print(min_result)
 
+95. Write a Python program to get the unique values in a given list of lists. 
+Original list:
+[[1, 2, 3, 5], [2, 3, 5, 4], [0, 5, 4, 1], [3, 7, 2, 1], [1, 2, 1, 2]]
+Unique values of the said list of lists:
+[0, 1, 2, 3, 4, 5, 7]
+Original list:
+[['h', 'g', 'l', 'k'], ['a', 'b', 'd', 'e', 'c'], ['j', 'i', 'y'], ['n', 'b', 'v', 'c'], ['x', 'z']]
+Unique values of the said list of lists:
+['e', 'd', 'c', 'b', 'x', 'k', 'n', 'h', 'g', 'j', 'i', 'a', 'l', 'y', 'v', 'z']
+l = [[1, 2, 3, 5],
+     [2, 3, 5, 4],
+     [0, 5, 4, 1],
+     [3, 7, 2, 1],
+     [1, 2, 1, 2]]
+
+result = []
+
+for sublist in l:
+    for value in sublist:
+        if value not in result:
+            result.append(value)
+
+result.sort()
+
+print("Original list:")
+print(l)
+
+print("Unique values:")
+print(result)
+
 
 
 
