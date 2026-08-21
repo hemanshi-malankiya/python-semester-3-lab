@@ -1585,7 +1585,36 @@ for n in numbers:
     print("Remove the last", n, "elements:")
     print(result)
     
+##94. Write a Python program to find the minimum, maximum value
+##for each tuple position in a given list of tuples. 
+##Original list:
+##[(2, 3), (2, 4), (0, 6), (7, 1)]
+##Maximum value for each tuple position in the said list of tuples:
+##[7, 6]
+##Minimum value for each tuple position in the said list of tuples:
+##[0, 1]
+l = [(2, 3), (2, 4), (0, 6), (7, 1)]
 
+max_result = []
+min_result = []
+
+for i in range(len(l[0])):
+    values = []
+
+    for tup in l:
+        values.append(tup[i])
+
+    max_result.append(max(values))
+    min_result.append(min(values))
+
+print("Original list:")
+print(l)
+
+print("Maximum value for each tuple position:")
+print(max_result)
+
+print("Minimum value for each tuple position:")
+print(min_result)
 
 
 
