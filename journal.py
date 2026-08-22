@@ -1646,7 +1646,20 @@ print(l)
 print("Unique values:")
 print(result)
 
+##96. Given a list of marks, create a list containing "Pass" if marks are 40 or above, otherwise "Fail" .
+##Python marks = [35, 80, 45, 20, 90, 40]
+##Expected output: Python ['Fail', 'Pass', 'Pass', 'Fail', 'Pass', 'Pass']
 
+
+
+# Given list of marks
+marks = [35, 80, 45, 20, 90, 40]
+
+# List comprehension to map marks to "Pass" or "Fail"
+status = ["Pass" if mark >= 40 else "Fail" for mark in marks]
+
+# Print the resulting list
+print(status)
 
 
 
