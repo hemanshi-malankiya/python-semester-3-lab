@@ -1661,6 +1661,21 @@ status = ["Pass" if mark >= 40 else "Fail" for mark in marks]
 # Print the resulting list
 print(status)
 
+##97. Given a list of numbers, create a list containing "Positive" , "Negative" , or "Zero" . Python numbers = [-3, 0, 5, -1, 8]
+##Expected output: Python ['Negative', 'Zero', 'Positive', 'Negative', 'Positive']
+##
+numbers = [-3, 0, 5, "-1,", 8]
+
+
+output = [
+    "Positive" if float(str(n).replace(",", "")) > 0 
+    else "Negative" if float(str(n).replace(",", "")) < 0 
+    else "Zero" 
+    for n in numbers
+]
+
+print(output)
+
 
 
        
