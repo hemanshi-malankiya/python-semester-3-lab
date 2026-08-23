@@ -1676,7 +1676,14 @@ output = [
 
 print(output)
 
+##98. Given a list of words, create a list of words that start with a vowel. Python words = ["apple", "banana", "orange", "grape", "umbrella"]
+##Expected output: Python ['apple', 'orange', 'umbrella']
 
+words = ["apple", "banana", "orange", "grape", "umbrella"]
+
+vowel_words = [word for word in words if word[0].lower() in "aeiou"]
+
+print(vowel_words)
 
        
     
