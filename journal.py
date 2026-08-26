@@ -1698,6 +1698,20 @@ for word in words:
 
 print(palindromes)
 
+##100. Given a list of numbers, create a list of squares only for even numbers.
+##Python numbers = [1, 2, 3, 4, 5, 6]
+##Expected output: Python [4, 16, 36]
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+squares = []
+
+for num in numbers:
+    if num % 2 == 0:
+        squares.append(num ** 2)
+
+print(squares)
+
        
     
 
