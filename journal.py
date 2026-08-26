@@ -1685,6 +1685,19 @@ vowel_words = [word for word in words if word[0].lower() in "aeiou"]
 
 print(vowel_words)
 
+##99. Given a list of words, create a list of palindromic words.
+##Python words = ["madam", "python", "level", "data", "radar"]
+##Expected output: Python ['madam', 'level', 'radar']
+words = ["madam", "python", "level", "data", "radar"]
+
+palindromes = []
+
+for word in words:
+    if word == word[::-1]:
+        palindromes.append(word)
+
+print(palindromes)
+
        
     
 
