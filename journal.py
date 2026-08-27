@@ -1735,7 +1735,18 @@ sentence = "Python is easy and powerful"
 
 result = [word for word in sentence.split() if len(word) > 3]
 
-print(result)    
+print(result)
+
+##103. Given a list of strings, create a list containing the first character of each string.
+##Python words = ["DNA", "RNA", "Protein", "Gene"]
+##Expected output: Python ['D', 'R', 'P', 'G']
+words = ["DNA", "RNA", "Protein", "Gene"]
+
+result = [word[0] for word in words]
+
+print(result)
+
+
 
     
 
