@@ -1712,6 +1712,18 @@ for num in numbers:
 
 print(squares)
 
+##101. Given a list of numbers, create a list of cubes only for odd numbers.
+##Python numbers = [1, 2, 3, 4, 5]
+##Expected output: Python [1, 27, 125]
+numbers = [1, 2, 3, 4, 5]
+
+cubes = []
+
+for num in numbers:
+    if num % 2 != 0:
+        cubes.append(num ** 3)
+
+print(cubes)
        
     
 
