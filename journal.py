@@ -1729,7 +1729,7 @@ print(cubes)
 ##102. Given a sentence, create a list of words with length greater than 3.
 ##Python sentence = "Python is easy and powerful"
 ##Expected output: Python ['Python', 'easy', 'powerful']
-##
+
        
 sentence = "Python is easy and powerful"
 
@@ -1746,6 +1746,13 @@ result = [word[0] for word in words]
 
 print(result)
 
+##104. Create a multiplication table list for number 5 from 1 to 10.
+##Expected output: Python [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+number = 5
+
+result = [number * i for i in range(1, 11)]
+
+print(result)
 
 
     
