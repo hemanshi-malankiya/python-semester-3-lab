@@ -1724,8 +1724,18 @@ for num in numbers:
         cubes.append(num ** 3)
 
 print(cubes)
+
+
+##102. Given a sentence, create a list of words with length greater than 3.
+##Python sentence = "Python is easy and powerful"
+##Expected output: Python ['Python', 'easy', 'powerful']
+##
        
-    
+sentence = "Python is easy and powerful"
+
+result = [word for word in sentence.split() if len(word) > 3]
+
+print(result)    
 
     
 
