@@ -1754,6 +1754,13 @@ result = [number * i for i in range(1, 11)]
 
 print(result)
 
+##105. Create a list of pairs (i, j) where i ranges from 1 to 3 and j ranges from 1 to 3.
+##Expected output: Python [(1, 1), (1, 2), (1, 3), (2, 1), (2, 2), (2, 3), (3, 1), (3, 2), (3, 3)]
+##
+result = [(i, j) for i in range(1, 4) for j in range(1, 4)]
+
+print(result)
+
 
     
 
