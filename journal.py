@@ -1761,6 +1761,15 @@ result = [(i, j) for i in range(1, 4) for j in range(1, 4)]
 
 print(result)
 
+##106. Create a list of pairs (i, j) where the sum of i and j is even. Python i = 1 to 4 j = 1 to 4
+##Expected output: Python [(1, 1), (1, 3), (2, 2), (2, 4), (3, 1), (3, 3), (4, 2), (4, 4)]
+
+result = [(i, j) for i in range(1, 5) for j in range(1, 5) if (i + j) % 2 == 0]
+
+print(result)
+
+
+
 
     
 
