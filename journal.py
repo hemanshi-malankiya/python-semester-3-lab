@@ -1778,6 +1778,15 @@ result = [item for row in matrix for item in row]
 
 print(result)
 
+##108. Extract only even numbers from the nested list.
+##Python matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+##Expected output: Python [2, 4, 6, 8]
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+result = [item for row in matrix for item in row if item % 2 == 0]
+
+print(result)
+
 
 
     
