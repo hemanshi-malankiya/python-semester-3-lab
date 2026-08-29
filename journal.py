@@ -1786,7 +1786,13 @@ matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 result = [item for row in matrix for item in row if item % 2 == 0]
 
 print(result)
+##
+##109. Create a 3 × 3 matrix where each element is 0 .
+##Expected output: Python [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+##
+matrix = [[0 for j in range(3)] for i in range(3)]
 
+print(matrix)
 
 
     
