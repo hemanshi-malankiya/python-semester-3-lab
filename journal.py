@@ -1768,6 +1768,15 @@ result = [(i, j) for i in range(1, 5) for j in range(1, 5) if (i + j) % 2 == 0]
 
 print(result)
 
+##107. Flatten the following nested list.
+##Python matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+##Expected output: Python [1, 2, 3, 4, 5, 6, 7, 8, 9]
+##
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+result = [item for row in matrix for item in row]
+
+print(result)
 
 
 
