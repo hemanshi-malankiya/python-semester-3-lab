@@ -1811,6 +1811,12 @@ result = [[row[i] for row in matrix] for i in range(3)]
 
 print(result)
 
+words = ["python", "education", "science", "data"]
+
+result = [sum(1 for letter in word if letter in "aeiou") for word in words]
+
+print(result)
+
     
 
     
