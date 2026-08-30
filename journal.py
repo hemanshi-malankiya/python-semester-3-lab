@@ -1801,6 +1801,16 @@ matrix = [[1 if i == j else 0 for j in range(4)] for i in range(4)]
 
 print(matrix)
 
+##111. Transpose the following matrix using list comprehension.
+##Python matrix = [[1, 2, 3], [4, 5, 6]]
+##Expected output: Python [[1, 4], [2, 5], [3, 6]]
+##
+matrix = [[1, 2, 3], [4, 5, 6]]
+
+result = [[row[i] for row in matrix] for i in range(3)]
+
+print(result)
+
     
 
     
