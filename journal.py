@@ -1794,6 +1794,12 @@ matrix = [[0 for j in range(3)] for i in range(3)]
 
 print(matrix)
 
+##110. Create a 4 × 4 identity matrix using list comprehension.
+##Expected output: Python [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+
+matrix = [[1 if i == j else 0 for j in range(4)] for i in range(4)]
+
+print(matrix)
 
     
 
