@@ -1826,6 +1826,15 @@ result = [sum(1 for ch in word if ch in "aeiou") for word in words]
 
 print(result)
 
+##113. Given a DNA sequence, create a list of codons.
+##Python dna = "ATGCGATACGTT"
+##Expected output: Python ['ATG', 'CGA', 'TAC', 'GTT']
+##
+dna = "ATGCGATACGTT"
+
+codons = [dna[i:i+3] for i in range(0, len(dna), 3)]
+
+print(codons)
 
 
     
