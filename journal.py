@@ -1836,6 +1836,18 @@ codons = [dna[i:i+3] for i in range(0, len(dna), 3)]
 
 print(codons)
 
+##114. Given a DNA sequence, create a list of codons excluding stop codons.
+##Python dna = "ATGTAAATGCGTTAGGGC" stop_codons = ["TAA", "TAG", "TGA"]
+##Expected output: Python ['ATG', 'ATG', 'CGT', 'GGC']
+dna = "ATGTAAATGCGTTAGGGC"
+stop_codons = ["TAA", "TAG", "TGA"]
+
+codons = [dna[i:i+3] for i in range(0, len(dna), 3) 
+          if dna[i:i+3] not in stop_codons]
+
+print(codons)
+
+
 
     
 
