@@ -1817,6 +1817,17 @@ result = [sum(1 for letter in word if letter in "aeiou") for word in words]
 
 print(result)
 
+##112. Given a list of words, create a list containing the number of vowels in each word.
+##Python words = ["python", "education", "science", "data"]
+##Expected output: Python [1, 5, 3, 2]
+words = ["python", "education", "science", "data"]
+
+result = [sum(1 for ch in word if ch in "aeiou") for word in words]
+
+print(result)
+
+
+
     
 
     
