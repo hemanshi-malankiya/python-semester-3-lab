@@ -1847,6 +1847,17 @@ codons = [dna[i:i+3] for i in range(0, len(dna), 3)
 
 print(codons)
 
+##115. Given a list of words, create a list of words that contain at least two vowels.
+##Python words = ["sky", "apple", "tree", "dry", "orange"]
+##Expected output: Python ['apple', 'tree', 'orange']
+##
+words = ["sky", "apple", "tree", "dry", "orange"]
+
+# List comprehension that counts vowels in each word
+output = [word for word in words if sum(1 for char in word if char.lower() in 'aeiou') >= 2]
+
+print(output)
+
 
 
     
