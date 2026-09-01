@@ -1858,6 +1858,30 @@ output = [word for word in words if sum(1 for char in word if char.lower() in 'a
 
 print(output)
 
+##116. Given a list of numbers, create a list where:
+##
+##numbers divisible by 3 are replaced with "Three"
+##numbers divisible by 5 are replaced with "Five"
+##numbers divisible by both 3 and 5 are replaced with "ThreeFive"
+##all other numbers remain unchanged
+##Python numbers = list(range(1, 21))
+##Expected output: Python [1, 2, 'Three', 4, 'Five', 'Three', 7, 8, 'Three', 'Five', 11, 'Three', 13, 14, 'ThreeFive', 16, 17, 'Three', 19, 'Five']
+##
+numbers = list(range(1, 21))
+output = []
+
+for num in numbers:
+    # Check divisibility by both 3 and 5 first (e.g., 15)
+    if num % 3 == 0 and num % 5 == 0:
+        output.append("ThreeFive")
+    elif num % 3 == 0:
+        output.append("Three")
+    elif num % 5 == 0:
+        output.append("Five")
+    else:
+        output.append(num)
+
+print(output)
 
 
     
