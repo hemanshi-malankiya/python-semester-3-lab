@@ -1896,7 +1896,28 @@ for student in marks:
 
 print(averages)
 
+##118. Given a list of sentences, create a list of all unique words in lowercase.
+##Python sentences = [ "Python is Easy", "Python is Powerful", "Learning Python is Fun" ]
+##Expected output: Python ['easy', 'fun', 'is', 'learning', 'powerful', 'python']
+##
+sentences = [
+    "Python is Easy",
+    "Python is Powerful",
+    "Learning Python is Fun"
+]
 
+words = []
+
+for sentence in sentences:
+    for word in sentence.split():
+        word = word.lower()
+        
+        if word not in words:
+            words.append(word)
+
+words.sort()
+
+print(words)
 
 
     
