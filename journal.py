@@ -1883,6 +1883,21 @@ for num in numbers:
 
 print(output)
 
+##117. Given a nested list of student marks, create a list containing the average marks of each student.
+##Python marks = [[80, 90, 70], [60, 75, 85], [95, 90, 100]]
+##Expected output: Python [80.0, 73.33333333333333, 95.0]
+marks = [[80, 90, 70], [60, 75, 85], [95, 90, 100]]
+
+averages = []
+
+for student in marks:
+    average = sum(student) / len(student)
+    averages.append(average)
+
+print(averages)
+
+
+
 
     
 
