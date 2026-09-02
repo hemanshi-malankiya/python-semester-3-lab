@@ -1919,6 +1919,19 @@ words.sort()
 
 print(words)
 
+##119. Given a DNA sequence, create a list of all overlapping 3-mers.
+##Python dna = "ATGCGT"
+##Expected output: Python ['ATG', 'TGC', 'GCG', 'CGT']
+##
+dna = "ATGCGT"
+
+mers = []
+
+for i in range(len(dna) - 2):
+    mer = dna[i:i+3]
+    mers.append(mer)
+
+print(mers)
 
     
 
