@@ -1933,6 +1933,19 @@ for i in range(len(dna) - 2):
 
 print(mers)
 
+##120.Invert a Dictionary with Duplicate Values
+##data = {
+##    "a": 10,
+##    "b": 20,
+##    "c": 10,
+##    "d": 30,
+##    "e": 20
+##}
+{
+    10: ["a", "c"],
+    20: ["b", "e"],
+    30: ["d"]
+}
     
 
     
