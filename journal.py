@@ -1960,7 +1960,16 @@ bonuses = [
     [4, 2000]
 ]
     
+# 122. Join two dictionaries   
+dict1 = {'Jessa': 70, 'Arul': 80, 'Emma': 55}
+dict2 = {'Kelly': 68, 'Harry': 50, 'Olivia': 66}
 
+# copy second dictionary into first dictionary
+dict1.update(dict2)
+# printing the updated dictionary
+print(dict1)
+# output {'Jessa': 70, 'Arul': 80, 'Emma': 55, 'Kelly': 68, 'Harry': 50, 'Olivia': 66}
+ 
     
 
 
